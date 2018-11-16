@@ -1,0 +1,66 @@
+{
+  "name": "q-applet-_nest-thermostat",
+  "publisher": "Metadot Corporation",
+  "displayName": "Gmail",
+  "version": "1.0.0",
+  "description": "Das Keyboard Alerts for Nest Thermostat",
+  "longDescription": "Get emails alerts directly on a Das Keyboard Q device. Requires a Nest thermostat.",
+  "icon": "assets/icon.png",
+  "developerRepoUrl": "https://github.com/daskeyboard/daskeyboard-applet--_nest-thermostat",
+  "officialProductName": "Gmail",
+  "image": "assets/misssssssssssssssssssssssssing",
+  "publisherName": "Das Keyboard",
+  "authorName": "Das Keyboard team",
+  "authorUrl": "https://twitter.com/daskeyboard",
+  "issuesUrl": "https://github.com/daskeyboard/daskeyboard-applet--_nest-thermostat/issues",
+  "homepage": "https://github.com/daskeyboard/daskeyboard-applet-_nest-thermostat",
+  "licenseUrl": "http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt",
+  "changelogUrl": "",
+  "qActionUrl": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Cory Kim",
+  "license": "MIT",
+  "dependencies": {
+    "daskeyboard-applet": "^2.8.1",
+    "request-promise": "^4.2.2"
+  },
+  "qConfig": {
+    "geometry": {
+      "width": 1,
+      "height": 1
+    },
+    "applet": {
+      "defaults": {}
+    },
+    "authorization": {
+      "type": "oauth2"
+    },
+    "questions": [
+      {
+        "key": "monitors",
+        "label": "Thermostat",
+        "help": "Select the thermostat you wish to monitor",
+        "required": true,
+        "order": 1,
+        "controlType": "select"
+      }
+    ]
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corykim/q-applet-_nest-thermostat.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/corykim/q-applet-_nest-thermostat/issues"
+  }
+}
