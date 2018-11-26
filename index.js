@@ -84,10 +84,12 @@ class NestThermostat extends q.DesktopApp {
 
     return this.readThermostat().then(thermostat => {
       let color;
-      const state = thermostat.hvac_state;
+      const state = hvacStateMap[thermostat.hvac_state];
 
       if (!state) {
-        throw new Error("No state defined for: " + hvac_state);
+        const msg = `No state defined for hvac_state: ${thermostat.hvac_state}`;
+        logger.error(msg);
+        throw new Error(msg);
       }
 
       if (thermostat.is_online) {
@@ -107,6 +109,12 @@ class NestThermostat extends q.DesktopApp {
       return new q.Signal({
         points: [[new q.Point(color)]],
         name: `${thermostat.name} is ${state.label}.`,
+        data: {
+          action: {
+            url: `https://home.nest.com/thermostat`,
+            label: `Adjust your thermostats`
+          }
+        },
         message: `Your ${thermostat.name_long} is ${state.label}.`
           + ` The ambient temperature is ${ambientTemperature}.`
           + ` The target temperature is ${targetTemperature}`

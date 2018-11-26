@@ -24,7 +24,7 @@
   "author": "Cory Kim",
   "license": "MIT",
   "dependencies": {
-    "daskeyboard-applet": "^2.8.1",
+    "daskeyboard-applet": "^2.8.6",
     "request-promise": "^4.2.2"
   },
   "qConfig": {

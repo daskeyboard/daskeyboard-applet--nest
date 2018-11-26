@@ -19,6 +19,10 @@ describe('NestThermostat', function () {
           return app.loadThermostats();
         })
         .then(thermostats => {
+          console.log("#########################");
+          console.log(thermostats);
+          console.log("#########################");
+
           assert.ok(thermostats);
           assert(Object.keys(thermostats).length > 0);
           const thermostat = thermostats[Object.keys(thermostats)[0]];
@@ -71,6 +75,7 @@ describe('NestThermostat', function () {
           assert(signal.name);
           assert(signal.message.includes('ambient temperature'));
           assert(signal.message.includes('target temperature'));
+          assert(!signal.message.includes('undefined'));
         });
       });
     });
