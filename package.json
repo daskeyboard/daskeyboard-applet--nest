@@ -13,10 +13,15 @@
   "authorName": "Das Keyboard",
   "authorUrl": "https://twitter.com/daskeyboard",
   "issuesUrl": "https://github.com/daskeyboard/daskeyboard-applet--nest/issues",
-  "homepage": "https://github.com/daskeyboard/daskeyboard-applet--nest",
+  "homePageUrl": "https://github.com/daskeyboard/daskeyboard-applet--nest",
   "licenseUrl": "http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt",
   "changelogUrl": "CHANGELOG.md",
+  "readMeUrl": "README.md",
+  "readMeEndUserUrl": "README_ENDUSER.md",
   "main": "index.js",
+  "engines": {
+    "das-keyboard-q": "3.1.0"
+  },
   "scripts": {
     "test": "mocha"
   },
