@@ -1,22 +1,21 @@
 {
-  "name": "q-applet-nest-thermostat",
-  "publisher": "Metadot Corporation",
-  "displayName": "Gmail",
+  "name": "daskeyboard-applet--nest",
+  "publisher": "Das Keyboard",
+  "displayName": "Nest",
   "version": "1.0.0",
   "description": "Das Keyboard Alerts for Nest Thermostat",
-  "longDescription": "Get emails alerts directly on a Das Keyboard Q device. Requires a Nest thermostat.",
+  "longDescription": "Requires a Nest thermostat.",
   "icon": "assets/icon.png",
-  "developerRepoUrl": "https://github.com/daskeyboard/daskeyboard-applet--_nest-thermostat",
-  "officialProductName": "Gmail",
-  "image": "assets/misssssssssssssssssssssssssing",
+  "developerRepoUrl": "https://github.com/daskeyboard/daskeyboard-applet--nest",
+  "officialProductName": "Nest",
+  "image": "assets/missing.png",
   "publisherName": "Das Keyboard",
-  "authorName": "Das Keyboard team",
+  "authorName": "Das Keyboard",
   "authorUrl": "https://twitter.com/daskeyboard",
-  "issuesUrl": "https://github.com/daskeyboard/daskeyboard-applet--_nest-thermostat/issues",
-  "homepage": "https://github.com/daskeyboard/daskeyboard-applet-_nest-thermostat",
+  "issuesUrl": "https://github.com/daskeyboard/daskeyboard-applet--nest/issues",
+  "homepage": "https://github.com/daskeyboard/daskeyboard-applet--nest",
   "licenseUrl": "http://www.gnu.org/licenses/old-licenses/gpl-2.0.txt",
-  "changelogUrl": "",
-  "qActionUrl": "",
+  "changelogUrl": "CHANGELOG.md",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -24,16 +23,13 @@
   "author": "Cory Kim",
   "license": "MIT",
   "dependencies": {
-    "daskeyboard-applet": "^2.8.6",
+    "daskeyboard-applet": "^2.10.10",
     "request-promise": "^4.2.2"
   },
   "qConfig": {
     "geometry": {
       "width": 1,
       "height": 1
-    },
-    "applet": {
-      "defaults": {}
     },
     "authorization": {
       "type": "oauth2"
